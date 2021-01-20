@@ -1,0 +1,126 @@
+.new
+  margin-bottom: 145px
+  &-container
+    width: 1140px
+    margin: 0 auto
+  &-wrapper
+    display: flex
+    justify-content: space-between
+  &-cards
+    display: grid
+    grid-template-rows: repeat(2, 230px)
+    grid-template-columns: repeat(2, 320px)
+    grid-gap: 30px
+    &__item
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 8px
+      &_1
+        grid-row: 1 / 3
+        grid-column: 1
+      &_2
+        grid-row: 1
+        grid-column: 2
+      &_3
+        grid-row: 2
+        grid-column: 2
+  &-info
+    padding: 10px 0 54px 57px
+    display: flex
+    flex-direction: column
+  &__title
+    margin-bottom: 24px
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $title-color
+  &__description
+    margin: 0 0 41px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $text-color
+    height: 216px
+    max-width: 392px
+    overflow: hidden
+  &-button
+    display: flex
+    align-items: center
+    text-decoration: none
+    &__label
+      margin-right: 19px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $main-blue
+
+// Ховер-эффекты
+@media (min-width: 993px)
+  .new-button:hover .new-button__label
+    color: $main-blue-hover
+
+// Адаптив
+@media (max-width: 1200px)
+  .new
+    &-container
+      max-width: 960px
+    &-cards
+      grid-template-columns: repeat(2, 230px)
+@media (max-width: 992px)
+  .new
+    &-container
+      max-width: 700px
+    &-wrapper
+      flex-direction: column
+    &-cards
+      grid-template-columns: repeat(2, 1fr)
+    &-info
+      padding: 40px 0 0
+    &__description
+      max-width: none
+      height: auto
+@media (max-width: 768px)
+  .new
+    margin-bottom: 80px
+    &-container
+      width: 672px
+    &-cards
+      grid-template-columns: 322px 320px
+@media (max-width: 767px)
+  .new
+    &-container
+      max-width: 576px
+      width: 90.625%
+    &-cards
+      grid-template-columns: repeat(2, 1fr)
+@media (max-width: 576px)
+  .new
+    margin-bottom: 110px
+    &-cards
+      grid-template-rows: 300px 97px
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 14px
+      &__item
+        &_1
+          grid-row: 1
+          grid-column: 1 / 3
+        &_2
+          grid-row: 2
+          grid-column: 1
+    &-info
+      padding-top: 36px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &__description
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &-button
+      display: none

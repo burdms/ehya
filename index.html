@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Ehya - интернет-магазин брендовой одежды</title>
+  </head>
+
+  <body>
+    <section class="new">
+      <div class="new-container">
+        <div class="new-wrapper">
+          <div class="new-cards">
+            <img
+              src="img/new/new-cards__1.png"
+              alt="Изображение товара из новой коллекции"
+              class="new-cards__item new-cards__item_1"
+            />
+            <!-- /.new-cards__item_1 -->
+            <img
+              src="img/new/new-cards__2.png"
+              alt="Изображение товара из новой коллекции"
+              class="new-cards__item new-cards__item_2"
+            />
+            <!-- /.new-cards__item_2 -->
+            <img
+              src="img/new/new-cards__3.png"
+              alt="Изображение товара из новой коллекции"
+              class="new-cards__item new-cards__item_3"
+            />
+            <!-- /.new-cards__item_3 -->
+          </div>
+          <!-- /.new-cards -->
+
+          <div class="new-info">
+            <h2 class="title new__title">Новая зимняя коллекция</h2>
+            <p class="new__description">
+              Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже.
+              Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить
+              20% скидку.
+            </p>
+            <a href="#" class="new-button">
+              <span class="new-button__label">Посмотреть коллекцию</span>
+              <svg class="new-button__icon icon icon__btn-arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- /.new-info -->
+        </div>
+        <!-- /.new-wrapper -->
+      </div>
+      <!-- /. new-container -->
+    </section>
+    <!-- /.new -->
+
+    <section class="stories">
+      <div class="stories-container">
+        <hr class="stories-hr" />
+        <div class="stories-wrapper">
+          <div class="swiper-container stories-slider stories-item_1">
+            <div class="swiper-wrapper stories-slider__wrapper">
+              <div class="swiper-slide stories-slide">
+                <span class="stories-slide__label">Истории</span>
+                <h2 class="title stories-slide__title stories-slide__title_large">
+                  Это История Fashun
+                </h2>
+                <h2 class="title stories-slide__title stories-slide__title_mobile">
+                  История Fashun
+                </h2>
+                <p class="stories-slide__text">
+                  Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером
+                  и&nbsp;специалистом.
+                </p>
+              </div>
+              <!-- stories-slider__item_1 -->
+
+              <div class="swiper-slide stories-slide">
+                <span class="stories-slide__label">Рассказы</span>
+                <h2 class="title stories-slide__title">Это История Kakoon</h2>
+                <p class="stories-slide__text">
+                  Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером
+                  и&nbsp;специалистом.
+                </p>
+              </div>
+              <!-- stories-slider__item_2 -->
+            </div>
+
+            <button class="stories-slider__button stories-slider__button_prev">
+              <svg class="icon icon__slider-btn icon__slider-btn_prev">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="stories-slider__button stories-slider__button_next">
+              <svg class="icon icon__slider-btn">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- stories-slider -->
+
+          <div class="stories-item stories-item_2">
+            <img
+              src="img/stories/stories-image_1.png"
+              alt="Изображение: девушка читает книгу"
+              class="stories-item__image"
+            />
+            <div class="stories-item__info">
+              <h3 class="title stories-item__title">
+                Mix & Match Style 01: повседневный и формальный стиль
+              </h3>
+              <a href="#" class="stories-item__link">Читать далее</a>
+            </div>
+            <!-- /.stories-item__info -->
+          </div>
+          <!-- /.stories-item -->
+
+          <div class="stories-item stories-item_3">
+            <img
+              src="img/stories/stories-image_2.png"
+              alt="Изображение: предметы гардероба на кровати"
+              class="stories-item__image"
+            />
+            <div class="stories-item__info">
+              <h3 class="title stories-item__title">
+                Лайфхак: Купите одежду Thrifft на воскресном рынке
+              </h3>
+              <a href="#" class="stories-item__link">Читать далее</a>
+            </div>
+            <!-- /.stories-item__info -->
+          </div>
+          <!-- /.stories-item -->
+        </div>
+        <!-- /.stories-wrapper -->
+      </div>
+      <!-- /.stories-container -->
+    </section>
+    <!-- /.stories -->
+
+    <section class="subscribe">
+      <div class="subscribe-container">
+        <div class="subscribe-info">
+          <h2 class="title subscribe-info__title">Подпишитесь</h2>
+          <p class="subscribe-info__text">
+            Напишите свой адрес электронной почты. Мы&nbsp;будем&nbsp;присылать вам новости из мира
+            моды.
+          </p>
+        </div>
+        <!-- /.subscribe-info -->
+
+        <form action="send.php" method="POST" class="subscribe-form">
+          <div class="subscribe-form__input-group">
+            <input
+              type="email"
+              class="subscribe-form__input"
+              name="email"
+              placeholder="Ваш Email"
+              required
+            />
+          </div>
+          <!-- /.subscribe-form__input-group -->
+          <input type="hidden" name="formName" value="subscribe" />
+          <button class="subscribe-form__button">Подписаться</button>
+        </form>
+        <!-- /.subscribe-form -->
+      </div>
+      <!-- /.subscribe-container -->
+    </section>
+    <!-- /.subscribe -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-info">
+            <a href="#" class="footer-logo">
+              <img src="img/footer/footer-logo.svg" alt="Логотип" class="footer-logo__image" />
+            </a>
+            <!-- /.footer-logo -->
+            <p class="footer-info__text">Интернет-магазин брендовой одежды с оплатой онлайн</p>
+            <div class="footer-social">
+              <a href="https://www.google.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-google"></use>
+                </svg>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-instagram"></use>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.footer-social -->
+          </div>
+          <!-- /.footer-info -->
+
+          <div class="footer-nav">
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Навигация</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Новая коллекция</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Трендовая одежда</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Истории Fashun</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Отзывы клиентов</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Вся одежда</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Сервисы</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Рассрочка на 6 мес </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Кредит на 12 мес</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Доставка по РФ</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Возврат покупок</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Акции и кэшбек</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Компания</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Об Ehya</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Правила сайта</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Обработка данных</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Вакансии</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Контакты</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Группа Фейсбук</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Канал Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+          </div>
+          <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+      <!-- /.footer-container -->
+    </footer>
+    <!-- /.footer -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+*
+	box-sizing: border-box
+html
+	scroll-behavior: smooth
+body
+	font-family: 'Open Sans', sans-serif
+	font-weight: 400
+	font-style: normal
+	background-color: $background-body
+	color: $text-color
+
+.container
+	margin: 0 auto
+	padding: 0
+	max-width: 1280px
+	width: 100%
+	background: #FFFFFF
+.title
+	margin: 0
+	font-feature-settings: "locl" 0
+	font-family: "HK Grotesk B", sans-serif
+	letter-spacing: 0.2px
+.grotesk-medium
+	font-feature-settings: "locl" 0
+	font-family: "HK Grotesk M", sans-serif
+.grotesk-regular
+	font-feature-settings: "locl" 0
+	font-family: "HK Grotesk R", sans-serif
+
+// Styles for svg-icons
+.icon
+	&__btn-arrow
+		fill: $main-blue
+		width: 13px
+		height: 16px
+		transition: margin ease-out 0.3s
+	&__slider-btn
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		fill: $title-color
+		width: 14px
+		height: 18px
+		transition: margin ease-out 0.3s
+		&_prev
+			fill: #959EAD
+			transform: rotate(180deg) translate(50%, 50%)
+	&__footer
+		width: 100%
+		height: 100%
+		fill: $text-color
+		transition: ease-out 0.3s
+
+// Mouse over effects
+@media (min-width: 993px)
+	.new-button:hover .icon__btn-arrow
+		fill: $main-blue-hover
+		margin-left: 4px
+		transition: margin ease-out 0.3s
+	.stories-slider__button:hover .icon__slider-btn
+		fill: $main-blue-hover
+		transition: ease-out 0.3s
+	.footer-social__item:hover	.icon__footer
+		fill: $main-blue-hover
+		transition: ease-out 0.3s

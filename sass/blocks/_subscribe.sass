@@ -1,0 +1,177 @@
+.subscribe
+  position: relative
+  color: #fff
+  overflow: hidden
+  background-color: $main-blue
+  &::before
+    content: ''
+    position: absolute
+    width: 2691px
+    height: 1981px
+    left: -612px
+    top: -818px
+    background: url(../img/subscribe/subscribe-circles.svg) no-repeat center/cover
+    pointer-events: none
+  // &::before
+  //   content: ''
+  //   position: absolute
+  //   left: -42.5%
+  //   right: 60.14%
+  //   top: -242.01%
+  //   bottom: -8.88%
+  //   width: 1186px
+  //   height: 1186px
+  //   border: 200px
+  //   border-style: solid
+  //   border-radius: 50%
+  //   border-image: #fff
+  //   opacity: 0.2
+  // &::after
+  //   content: ''
+  //   position: absolute
+  //   left: 62.01%
+  //   right: -44.38%
+  //   top: -6.8%
+  //   bottom: -244.08%
+  //   width: 1186px
+  //   height: 1186px
+  //   border: 200px
+  //   border-style: solid
+  //   border-radius: 50%
+  //   border-image: #fff
+  //   opacity: 0.2
+  &-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 1077px
+    margin-left: 106px
+    margin-right: 167px
+    padding: 100px 0
+  &-info
+    &__title
+      margin-bottom: 14px
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+    &__text
+      margin: 0
+      max-width: 436px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+  &-form
+    position: relative
+    width: 447px
+    height: 56px
+    &::after
+      content: ''
+      position: absolute
+      width: 16px
+      height: 18px
+      top: 20px
+      left: 20px
+      background: url(../img/subscribe/subscribe-mail.svg) no-repeat
+      background-size: 100% 100%
+      pointer-events: none
+    &__input-group
+      width: 100%
+      height: 100%
+    &__input
+      position: relative
+      padding: 17px 184px 17px 48px
+      width: 100%
+      height: 100%
+      background: #FFFFFF
+      border: 1px solid #C3CAD9
+      border-radius: 8px
+      outline: none
+      &::placeholder
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #959EAD
+    &__button
+      position: absolute
+      top: 4.5px
+      right: 4.5px
+      width: 177px
+      height: 47px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      border: none
+      border-radius: 4px
+      background: $title-color
+      color: white
+      cursor: pointer
+  &__error
+    color: red
+
+// Ховер-эффекты
+@media (min-width: 993px)
+  .subscribe-form__button:hover
+    background-color: $button-color-hover
+
+// Адаптив
+@media (max-width: 1200px)
+  .subscribe
+    &-container
+      margin: 0 auto
+      max-width: 960px
+      width: auto
+@media (max-width: 992px)
+  .subscribe
+    &-container
+      max-width: 700px
+      flex-direction: column
+      text-align: center
+      padding: 72px 0 80px
+    &-info
+      &__text
+        margin-bottom: 56px
+        max-width: 477px
+@media (max-width: 767px)
+  .subscribe
+    &-container
+      max-width: 576px
+      width: 90.625%
+      padding: 64px 20px
+@media (max-width: 576px)
+  .subscribe
+    &-container
+      margin: 0
+      max-width: none
+      width: 100%
+      padding: 64px 20px
+    &-info
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        max-width: none
+        width: 100%
+        font-size: 16px
+        line-height: 28px
+    &-form
+      max-width: 380px
+@media (max-width: 420px)
+  .subscribe
+    &-form
+      max-width: none
+      width: 100%
+      height: auto
+      &__input-group
+        margin-bottom: 10px
+      &__input
+        padding-right: 17px
+        height: 48px
+      &__button
+        position: static
+        width: 100%
+        height: 48px
+        border-radius: 8px
