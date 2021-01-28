@@ -1,9 +1,19 @@
 $(document).ready(function () {
-  // Burger menu
+  // Burger menu and login button
   const burgerButton = document.querySelector(".header-burger");
   const overlay = document.querySelector(".overlay");
   const headerLink = document.querySelectorAll(".header-nav__link");
+  const loginButton = document.querySelector(".header-login");
+  const loginCloseButton = document.querySelector(".login__close");
+  const loginOverlay = document.querySelector(".login__overlay");
   overlay.addEventListener("click", menuClose);
+  loginOverlay.addEventListener("click", menuClose);
+  loginCloseButton.addEventListener("click", menuClose);
+
+  loginButton.addEventListener("click", function () {
+    document.querySelector("body").classList.add("no-overflow");
+    document.querySelector(".login").classList.add("login_visible");
+  });
 
   burgerButton.addEventListener("click", function () {
     document.querySelector(".header-menu").classList.toggle("header-menu_opened");
@@ -17,6 +27,7 @@ $(document).ready(function () {
     document.querySelector(".overlay").classList.remove("overlay_opened");
     document.querySelector(".header-burger").classList.remove("header-burger_opened");
     document.querySelector("body").classList.remove("no-overflow");
+    document.querySelector(".login").classList.remove("login_visible");
   }
 
   document.addEventListener("keyup", (e) => {
