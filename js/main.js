@@ -25,6 +25,20 @@ $(document).ready(function () {
 
   headerLink.forEach((link) => link.addEventListener("click", menuClose));
 
+  // Show/hide password icon
+  const showPassword = document.querySelector(".login__password-control");
+  showPassword.addEventListener("click", function () {
+    let input = document.getElementById("password-input");
+    if (input.getAttribute("type") == "password") {
+      showPassword.classList.add("login__password-control_hide");
+      input.setAttribute("type", "text");
+    } else {
+      showPassword.classList.remove("login__password-control_hide");
+      input.setAttribute("type", "password");
+    }
+    return false;
+  });
+
   var storiesSlider = new Swiper(".stories-slider", {
     loop: true,
     effect: "slide",
