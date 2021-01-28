@@ -66,6 +66,18 @@ $(document).ready(function () {
     },
   });
 
+  $(".login__form").validate({
+    errorClass: "subscribe__error",
+    messages: {
+      login: {
+        required: "Введите ваш логин",
+      },
+      password: {
+        required: "Введите ваш пароль",
+        minlength: "Пароль мин. 6 символов",
+      },
+    },
+  });
   $(".subscribe-form").validate({
     errorClass: "subscribe__error",
     messages: {
