@@ -38,7 +38,7 @@
     </section>
     <!-- /.header -->
 
-    <div class="login" style="display: none">
+    <div class="login">
       <div class="login__overlay"></div>
       <!-- /.login__overlay -->
 
@@ -49,35 +49,28 @@
           </svg>
         </button>
 
-        <h3 class="login__title">Войти в личный кабинет</h3>
+        <h3 class="title login__title">Войти в&nbsp;личный&nbsp;кабинет</h3>
 
         <form action="send.php" method="POST" class="login__form">
           <input type="hidden" name="formName" value="login" />
-          <div class="login-group">
+          <input
+            type="text"
+            class="input login__input"
+            placeholder="Ваш логин"
+            name="login"
+            required
+          />
+          <div class="login__password">
             <input
-              type="text"
-              class="input login-group__input"
-              placeholder="Ваш логин"
-              name="login"
+              type="password"
+              class="input login__input login__input_password"
+              placeholder="Ваш пароль"
+              name="password"
               required
             />
-            <div class="login-group__password">
-              <input
-                type="password"
-                class="input login-group__input"
-                placeholder="Ваш пароль"
-                name="password"
-                required
-              />
-              <a
-                href="#"
-                class="login-group__password-control"
-                onclick="return show_hide_password(this);"
-              ></a>
-            </div>
-            <!-- /.login-group__password -->
+            <a id="show-hide" class="login__password-control"></a>
           </div>
-          <!-- /.login-group -->
+          <!-- /.login__password -->
 
           <button type="submit" class="login__button">Войти</button>
         </form>

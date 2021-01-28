@@ -1,0 +1,89 @@
+.login
+  &__overlay
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 150
+    background-color: #000000
+    opacity: 0.3
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, - 50%)
+    z-index: 151
+    padding: 35px 35px
+    width: 300px
+    background-color: #fff
+    border-radius: 8px
+  &__close
+    position: absolute
+    top: 15px
+    right: 15px
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24px
+    height: 24px
+    background-color: transparent
+    outline: none
+    border: none
+    cursor: pointer
+  &__title
+    font-size: 24px
+    line-height: 36px
+    color: $title-color
+    margin-bottom: 25px
+  &__input
+    padding: 0 10px
+    margin-bottom: 10px
+    width: 100%
+    height: 50px
+    border: 2px solid #bebebe
+    border-radius: 8px
+    outline: none
+    &_password
+      padding-right: 45px
+      margin-bottom: 25px
+  &__password
+    position: relative
+    &-control
+      position: absolute
+      top: 15px
+      right: 15px
+      display: inline-block
+      width: 20px
+      height: 20px
+      background: url(../img/password-show.svg) 0 0 no-repeat
+      cursor: pointer
+      outline: none
+      border: none
+      &_hide
+        background: url(../img/password-hide.svg) 0 0 no-repeat
+  &__button
+    padding: 13px 24px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #fff
+    background-color: $main-blue
+    border: 2px solid $main-blue
+    border-radius: 8px
+    cursor: pointer
+    outline: none
+    transition: all ease-out 0.3s
+
+// Ховер-эффекты
+@media (min-width: 993px)
+  .login
+    &__button
+      &:hover
+        color: $main-blue
+        background-color: #ffffff
+        transition: all ease-out 0.3s
