@@ -20,10 +20,15 @@ a
 
 // Styles for svg-icons
 .icon
+	&__close
+		width: 24px
+		height: 24px
+		fill: $title-color
+		transition: all ease-out 0.3s
 	&__btn-arrow
-		fill: $main-blue
 		width: 13px
 		height: 16px
+		fill: $main-blue
 		transition: margin ease-out 0.3s
 	&__slider-btn
 		position: absolute
@@ -45,6 +50,9 @@ a
 
 // Mouse over effects
 @media (min-width: 993px)
+	.login__close:hover .icon__close
+		fill: $main-blue-hover
+		transition: all ease-out 0.3s
 	.new-button:hover .icon__btn-arrow
 		fill: $main-blue-hover
 		margin-left: 4px
