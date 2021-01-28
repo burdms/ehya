@@ -20,7 +20,7 @@
   &-nav
     display: flex
     align-items: center
-    margin-right: 45px
+    margin-right: 50px
     &__link
       font-style: normal
       font-weight: 600
@@ -29,7 +29,7 @@
       color: $title-color
       transition: all ease-out 0.3s
       &:not(:last-child)
-        margin-right: 38px
+        margin-right: 40px
   &-login
     padding: 13px 24px
     font-style: normal
@@ -72,3 +72,22 @@
         color: #ffffff
         background-color: $main-blue
         transition: all ease-out 0.3s
+
+// Адаптив
+@media (max-width: 1200px)
+  .header
+    &-container
+      max-width: 960px
+@media (max-width: 992px)
+  .header
+    &-container
+      max-width: 700px
+    &-menu
+      display: none
+    &-burger
+      display: flex
+@media (max-width: 767px)
+  .header
+    &-container
+      max-width: 576px
+      width: 85%
