@@ -2,9 +2,8 @@ $(document).ready(function () {
   // Burger menu
   const burgerButton = document.querySelector(".header-burger");
   const overlay = document.querySelector(".overlay");
-  const headerLink = document.querySelector(".header-nav__link");
+  const headerLink = document.querySelectorAll(".header-nav__link");
   overlay.addEventListener("click", menuClose);
-  headerLink.addEventListener("click", menuClose);
 
   burgerButton.addEventListener("click", function () {
     document.querySelector(".header-menu").classList.toggle("header-menu_opened");
@@ -23,6 +22,8 @@ $(document).ready(function () {
   document.addEventListener("keyup", (e) => {
     if (e.code === "Escape") menuClose();
   });
+
+  headerLink.forEach((link) => link.addEventListener("click", menuClose));
 
   var storiesSlider = new Swiper(".stories-slider", {
     loop: true,
