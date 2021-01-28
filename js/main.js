@@ -1,8 +1,8 @@
 $(document).ready(function () {
   // Burger menu
-  let burgerButton = document.querySelector(".header-burger");
-  let overlay = document.querySelector(".overlay");
-  let headerLink = document.querySelector(".header-nav__link");
+  const burgerButton = document.querySelector(".header-burger");
+  const overlay = document.querySelector(".overlay");
+  const headerLink = document.querySelector(".header-nav__link");
   overlay.addEventListener("click", menuClose);
   headerLink.addEventListener("click", menuClose);
 
@@ -12,12 +12,14 @@ $(document).ready(function () {
     document.querySelector(".header-burger").classList.toggle("header-burger_opened");
     document.querySelector("body").classList.toggle("no-overflow");
   });
+
   function menuClose() {
     document.querySelector(".header-menu").classList.remove("header-menu_opened");
     document.querySelector(".overlay").classList.remove("overlay_opened");
     document.querySelector(".header-burger").classList.remove("header-burger_opened");
     document.querySelector("body").classList.remove("no-overflow");
   }
+
   document.addEventListener("keyup", (e) => {
     if (e.code === "Escape") menuClose();
   });
