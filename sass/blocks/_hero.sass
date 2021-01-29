@@ -1,9 +1,8 @@
 .hero
   position: relative
   margin: 0 auto 120px
-  padding: 62px 107px 46px
+  padding: 60px 107px 46px
   max-width: 1280px
-  min-height: 700px
   background: #E8EAE9
   overflow: hidden
   border-radius: 8px
@@ -32,7 +31,7 @@
     flex-direction: column
     align-items: flex-start
   &__tag
-    margin-bottom: 28px
+    margin-bottom: 30px
     padding: 6px 16px
     max-width: 200px
     font-style: normal
@@ -61,7 +60,7 @@
   &__text
     --line: 3
     --line-height: 36px
-    margin: 0 0 52.5px
+    margin: 0 0 49px
     padding: 0
     width: 652px
     font-style: normal
@@ -71,6 +70,7 @@
     max-height: calc(var(--line-height) * var(--line))
     overflow: hidden
   &__button
+    margin-bottom: 48.5px
     padding: 15px 40px
     max-width: 300px
     font-style: normal
@@ -80,3 +80,22 @@
     border-radius: 8px
     color: #ffffff
     background-color: $title-color
+  &-advantages
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    list-style-type: none
+    &__item
+      display: flex
+      align-items: center
+      &:not(:last-child)
+        margin-right: 28px
+    &__icon
+      margin-right: 8px
+    &__text
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: $title-color
