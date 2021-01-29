@@ -1,0 +1,70 @@
+.hero
+  position: relative
+  margin: 0 auto 120px
+  padding: 62px 107px 46px
+  max-width: 1280px
+  min-height: 700px
+  background: #E8EAE9
+  overflow: hidden
+  border-radius: 8px
+  &::before
+    content: ''
+    position: absolute
+    top: -336px
+    right: -196px
+    z-index: 1
+    width: 1074px
+    height: 1614px
+    background-image: url(../img/hero-image.png)
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 400px
+    z-index: 2
+    width: 100%
+    height: 100%
+    background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
+  &-wrapper
+    position: relative
+    z-index: 3
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__tag
+    margin-bottom: 28px
+    padding: 6px 16px
+    max-width: 200px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    white-space: nowrap
+    overflow-x: hidden !important
+    text-overflow: ellipsis
+    border-radius: 2000px
+    color: #36B37E
+    background-color: rgba(54, 179, 126, 0.1)
+  &__title
+    --line: 2.9
+    margin-bottom: 28px
+    width: 425px
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    --line-height: 68px
+    max-height: calc(var(--line-height) * var(--line))
+    overflow: hidden
+    color: $title-color
+  &__text
+    --line: 2
+    margin: 0 0 52.5px
+    padding: 0
+    width: 652px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    --line-height: 36px
+    max-height: calc(var(--line-height) * var(--line))
+    overflow: hidden
