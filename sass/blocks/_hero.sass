@@ -47,24 +47,36 @@
     color: #36B37E
     background-color: rgba(54, 179, 126, 0.1)
   &__title
-    --line: 2.9
+    --line: 3
+    --line-height: 68px
     margin-bottom: 28px
     width: 425px
     font-style: normal
     font-weight: bold
     font-size: 56px
-    --line-height: 68px
+    line-height: var(--line-height)
     max-height: calc(var(--line-height) * var(--line))
     overflow: hidden
     color: $title-color
   &__text
-    --line: 2
+    --line: 3
+    --line-height: 36px
     margin: 0 0 52.5px
     padding: 0
     width: 652px
     font-style: normal
     font-weight: normal
     font-size: 20px
-    --line-height: 36px
+    line-height: var(--line-height)
     max-height: calc(var(--line-height) * var(--line))
     overflow: hidden
+  &__button
+    padding: 15px 40px
+    max-width: 300px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    border-radius: 8px
+    color: #ffffff
+    background-color: $title-color
