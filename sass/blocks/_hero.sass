@@ -80,6 +80,7 @@
     border-radius: 8px
     color: #ffffff
     background-color: $title-color
+    transition: all ease-out 0.3s
   &-advantages
     margin: 0
     padding: 0
@@ -99,3 +100,75 @@
       font-size: 16px
       line-height: 20px
       color: $title-color
+
+// Hover effects
+@media (min-width: 993px)
+  .hero
+    &__button
+      &:hover
+        background-color: $button-color-hover
+        transition: all ease-out 0.3s
+
+// Responsive
+@media (max-width: 1280px)
+  .hero
+    margin-left: 20px
+    margin-right: 20px
+    &::after
+      left: 280px
+@media (max-width: 1200px)
+  .hero
+    &::after
+      left: 250px
+@media (max-width: 1168px)
+  .hero
+    &::after
+      left: 132px
+@media (max-width: 1132px)
+  .hero
+    &::after
+      left: 132px
+@media (max-width: 1050px)
+  .hero
+    &::after
+      left: 58px
+@media (max-width: 992px)
+  .hero
+    padding: 36px 28px
+    &::before
+      right: -364px
+    &::after
+      left: 190px
+    &__tag
+      margin-bottom: 26px
+    &__title
+      --line-height: 60px
+      margin-bottom: 20px
+      width: 365px
+      font-size: 48px
+    &__text
+      --line: 4
+      --line-height: 32px
+      margin-bottom: 34px
+      width: 400px
+      font-size: 18px
+    &-advantages
+      &__item
+        &:not(:last-child)
+          margin-right: 18px
+@media (max-width: 992px)
+  .hero
+    &::after
+      left: 100px
+@media (max-width: 852px)
+  .hero
+    &::after
+      left: 50px
+@media (max-width: 810px)
+  .hero
+    &::after
+      left: 20px
+@media (max-width: 768px)
+  .hero
+    &::after
+      left: 0px
