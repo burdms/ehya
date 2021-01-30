@@ -1,0 +1,48 @@
+.trends
+  &-container
+    max-width: 1135px
+    margin: 0 auto
+  &__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 48px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: $title-color
+  &-tabs
+    display: flex
+    align-items: center
+    margin: 0
+    padding: 0
+    &__item
+      max-width: 100px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      white-space: nowrap
+      overflow-x: hidden !important
+      text-overflow: ellipsis
+      color: $text-color
+      cursor: pointer
+      &:not(:last-child)
+        margin-right: 38px
+      &_active
+        font-weight: bold
+        line-height: 25px
+        color: $title-color
+
+// Mouseover effects
+@media (min-width: 993px)
+  .trends
+    &-tabs
+      &__item
+        &:hover
+          color: $main-blue-hover
+        &_active
+          &:hover
+            color: $title-color
