@@ -142,3 +142,68 @@
     &-card
       &__image
         height: 350px
+@media (max-width: 767px)
+  .trends
+    &-container
+      max-width: 576px
+      width: 90.625%
+    &-card
+      &__title
+        max-width: 217px
+@media (max-width: 576px)
+  .trends
+    margin-bottom: 48px
+    &__heading
+      margin-bottom: 36px
+    &__title
+      margin-bottom: 24px
+      font-size: 28px
+      line-height: 36px
+    &-tabs
+      &__item
+        font-size: 16px
+        line-height: 22px
+    &-content
+      &__item
+        grid-gap: 30px
+    &-card
+      &__image
+        margin-bottom: 13px
+        height: 300px
+      &__text
+        margin: 0
+      &__title
+        font-size: 16px
+        line-height: 20px
+      &__price
+        justify-content: flex-start
+        font-size: 16px
+        line-height: 20px
+      &__icon
+        margin-left: 9px
+    &-more
+      &__icon
+        margin-bottom: 2px
+        width: 25px
+        height: 32px
+      &__text
+        font-size: 17px
+        line-height: 20px
+@media (max-width: 420px)
+  .trends
+    &-content
+      &__item
+        grid-column-gap: 20px
+        grid-row-gap: 20px
+    &-card
+      &__image
+        height: 250px
+@media (max-width: 360px)
+  .trends
+    &-content
+      &__item
+        grid-column-gap: 10px
+        grid-row-gap: 20px
+    &-card
+      &__image
+        height: 170px
