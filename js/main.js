@@ -50,6 +50,19 @@ $(document).ready(function () {
     return false;
   });
 
+  // Trends tab selector
+  const tab = $(".trends-tabs__item");
+  const content = $(".trends-content__item");
+
+  tab.on("click", function (event) {
+    let activeContent = $(this).attr("data-target");
+    content.removeClass("trends-content__item_active");
+    tab.removeClass("trends-tabs__item_active");
+    $(activeContent).addClass("trends-content__item_active");
+    $(this).addClass("trends-tabs__item_active");
+  });
+
+  // Stories slider
   var storiesSlider = new Swiper(".stories-slider", {
     loop: true,
     effect: "slide",
