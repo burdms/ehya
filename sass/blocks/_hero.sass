@@ -80,6 +80,9 @@
     border-radius: 8px
     color: #ffffff
     background-color: $title-color
+    white-space: nowrap
+    overflow-x: hidden !important
+    text-overflow: ellipsis
     transition: all ease-out 0.3s
   &-advantages
     margin: 0
@@ -170,5 +173,65 @@
       left: 20px
 @media (max-width: 768px)
   .hero
+    margin-bottom: 80px
     &::after
       left: 0px
+@media (max-width: 700px)
+  .hero
+    padding-top: 381px
+    margin-left: 0
+    margin-right: 0
+    width: 100%
+    border-radius: 0
+    background-color: #DCDBD9
+    &::after
+      background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+    &-wrapper
+      align-items: center
+    &__title
+      text-align: center
+    &__text
+      text-align: center
+    &-advantages
+      flex-wrap: wrap
+      &__icon
+        width: 24px
+        height: 24px
+@media (max-width: 510px)
+  .hero
+    &-advantages
+      justify-content: center
+      &__item
+        &:not(:last-child)
+          margin-right: 16px
+          margin-bottom: 16px
+@media (max-width: 416px)
+  .hero
+    padding-left: 20px
+    padding-right: 20px
+    margin-bottom: 64px
+    &::before
+      right: -400px
+    &__tag
+      margin-bottom: 14px
+    &__title
+      --line-height: 40px
+      width: 100%
+      font-size: 32px
+    &__text
+      --line: 5
+      --line-height: 28px
+      margin-bottom: 24px
+      width: 100%
+      font-size: 16px
+    &__button
+      margin-bottom: 22px
+      padding: 13px 49px
+      width: 100%
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+    &-advantages
+      &__item
+        &:not(:last-child)
+          margin-right: 11px
