@@ -162,9 +162,48 @@
       width: 90.625%
     &-wrapper
       padding: 79px 0 0
-@media (max-width: 580px)
+    &-slider
+      max-width: 525px
+    &-item
+      width: 253px
+      &__image
+        width: 243px
+      &__info
+        width: 243px
+@media (max-width: 576px)
   .stories
-    margin-bottom: 76px
+    margin-bottom: 55px
     &-container
       max-width: 576px
       width: 87.5%
+    &-info
+      padding-bottom: 36px
+      &__title
+        &_large
+          display: none
+        &_mobile
+          display: inline-block
+          margin-bottom: 16px
+          font-size: 28px
+          line-height: 36px
+      &__text
+        margin-bottom: 36px
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      max-width: 576px
+      width: 87.5%
+    &-item
+      width: 100%
+      height: 407px
+      margin-bottom: 9px
+      &__image
+        width: 96.43%
+        height: 277px
+      &__info
+        width: 96.43%
+      &__title
+        margin-bottom: 16px
+        font-size: 20px
+        line-height: 24px
+        height: 72px
