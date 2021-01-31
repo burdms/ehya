@@ -1,9 +1,10 @@
 $(document).ready(function () {
+  // To top button
   let toTop = $(".to-top");
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 400) {
       $(toTop).removeClass("to-top_hidden");
-    } else if ($(this).scrollTop() < 100) {
+    } else if ($(this).scrollTop() < 400) {
       $(toTop).addClass("to-top_hidden");
     }
   });
