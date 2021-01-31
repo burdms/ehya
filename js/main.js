@@ -87,9 +87,10 @@ $(document).ready(function () {
   // Stories slider
   if (document.querySelector(".stories-slider")) {
     const storiesSlider = new Swiper(".stories-slider", {
-      loop: true,
       effect: "slide",
-      autoHeight: true,
+      spaceBetween: 22,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
 
       navigation: {
         nextEl: ".stories-info__button_next",

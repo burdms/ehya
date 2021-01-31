@@ -726,78 +726,102 @@
       <div class="stories-container">
         <hr class="stories-hr" />
         <div class="stories-wrapper">
-          <div class="swiper-container stories-slider stories-item_1">
-            <div class="swiper-wrapper stories-slider__wrapper">
-              <div class="swiper-slide stories-slide">
-                <span class="stories-slide__label">Истории</span>
-                <h2 class="title stories-slide__title stories-slide__title_large">
-                  Это История Fashun
-                </h2>
-                <h2 class="title stories-slide__title stories-slide__title_mobile">
-                  История Fashun
-                </h2>
-                <p class="stories-slide__text">
-                  Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером
-                  и&nbsp;специалистом.
-                </p>
-              </div>
-              <!-- stories-slider__item_1 -->
+          <div class="stories-info">
+            <span class="stories-info__label">Истории</span>
+            <h2 class="title stories-info__title stories-info__title_large">Это История Fashun</h2>
+            <h2 class="title stories-info__title stories-info__title_mobile">История Fashun</h2>
+            <p class="stories-info__text">
+              Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером
+              и&nbsp;специалистом.
+            </p>
 
-              <div class="swiper-slide stories-slide">
-                <span class="stories-slide__label">Рассказы</span>
-                <h2 class="title stories-slide__title">Это История Kakoon</h2>
-                <p class="stories-slide__text">
-                  Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером
-                  и&nbsp;специалистом.
-                </p>
-              </div>
-              <!-- stories-slider__item_2 -->
-            </div>
-
-            <button class="stories-slider__button stories-slider__button_prev">
+            <button class="stories-info__button stories-info__button_prev">
               <svg class="icon icon__slider-btn icon__slider-btn_prev">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
             </button>
-            <button class="stories-slider__button stories-slider__button_next">
+            <button class="stories-info__button stories-info__button_next">
               <svg class="icon icon__slider-btn">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
             </button>
           </div>
-          <!-- stories-slider -->
+          <!-- stories-info -->
 
-          <div class="stories-item stories-item_2">
-            <img
-              src="img/stories-image_1.png"
-              alt="Изображение: девушка читает книгу"
-              class="stories-item__image"
-            />
-            <div class="stories-item__info">
-              <h3 class="title stories-item__title">
-                Mix & Match Style 01: повседневный и формальный стиль
-              </h3>
-              <a href="#" class="stories-item__link">Читать далее</a>
-            </div>
-            <!-- /.stories-item__info -->
-          </div>
-          <!-- /.stories-item -->
+          <!-- Slider main container -->
+          <div class="swiper-container stories-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide stories-item">
+                <img
+                  src="img/stories-image_1.png"
+                  alt="Изображение: девушка читает книгу"
+                  class="stories-item__image"
+                />
+                <div class="stories-item__info">
+                  <h3 class="title stories-item__title">
+                    Mix & Match Style 01: повседневный и формальный стиль
+                  </h3>
+                  <a href="#" class="stories-item__link">Читать далее</a>
+                </div>
+                <!-- /.stories-item__info -->
+              </div>
+              <!-- /.stories-item -->
 
-          <div class="stories-item stories-item_3">
-            <img
-              src="img/stories-image_2.png"
-              alt="Изображение: предметы гардероба на кровати"
-              class="stories-item__image"
-            />
-            <div class="stories-item__info">
-              <h3 class="title stories-item__title">
-                Лайфхак: Купите одежду Thrifft на воскресном рынке
-              </h3>
-              <a href="#" class="stories-item__link">Читать далее</a>
+              <div class="swiper-slide stories-item">
+                <img
+                  src="img/stories-image_2.png"
+                  alt="Изображение: предметы гардероба на кровати"
+                  class="stories-item__image"
+                />
+                <div class="stories-item__info">
+                  <h3 class="title stories-item__title">
+                    Лайфхак: Купите одежду Thrifft на воскресном рынке
+                  </h3>
+                  <a href="#" class="stories-item__link">Читать далее</a>
+                </div>
+                <!-- /.stories-item__info -->
+              </div>
+              <!-- /.stories-item -->
+
+              <!-- 2 -->
+              <div class="swiper-slide stories-item">
+                <img
+                  src="img/stories-image_2.png"
+                  alt="Изображение: предметы гардероба на кровати"
+                  class="stories-item__image"
+                />
+                <div class="stories-item__info">
+                  <h3 class="title stories-item__title">
+                    Лайфхак: Купите одежду Thrifft на воскресном рынке
+                  </h3>
+                  <a href="#" class="stories-item__link">Читать далее</a>
+                </div>
+                <!-- /.stories-item__info -->
+              </div>
+              <!-- /.stories-item -->
+
+              <div class="swiper-slide stories-item">
+                <img
+                  src="img/stories-image_1.png"
+                  alt="Изображение: девушка читает книгу"
+                  class="stories-item__image"
+                />
+                <div class="stories-item__info">
+                  <h3 class="title stories-item__title">
+                    Mix & Match Style 01: повседневный и формальный стиль
+                  </h3>
+                  <a href="#" class="stories-item__link">Читать далее</a>
+                </div>
+                <!-- /.stories-item__info -->
+              </div>
+              <!-- /.stories-item -->
+              <!-- 2 -->
             </div>
-            <!-- /.stories-item__info -->
+            <!-- /.swiper-wrapper -->
           </div>
-          <!-- /.stories-item -->
+          <!-- /.stories-slider -->
         </div>
         <!-- /.stories-wrapper -->
       </div>
