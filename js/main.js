@@ -88,9 +88,6 @@ $(document).ready(function () {
   if (document.querySelector(".stories-slider")) {
     const storiesSlider = new Swiper(".stories-slider", {
       effect: "slide",
-      spaceBetween: 22,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
 
       navigation: {
         nextEl: ".stories-info__button_next",
@@ -100,6 +97,21 @@ $(document).ready(function () {
       keyboard: {
         enabled: true,
         onlyInViewport: true,
+      },
+
+      breakpoints: {
+        577: {
+          spaceBetween: 22,
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        320: {
+          spaceBetween: 18,
+          slidesPerView: 1,
+          slidesPerGroup: 2,
+          slidesPerColumn: 2,
+          slidesPerColumnFill: "row",
+        },
       },
     });
   }
