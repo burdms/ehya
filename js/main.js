@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  let toTop = $(".to-top");
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(toTop).removeClass("to-top_hidden");
+    } else if ($(this).scrollTop() < 100) {
+      $(toTop).addClass("to-top_hidden");
+    }
+  });
+
   // Burger menu and login button
   const burgerButton = document.querySelector(".header-burger");
   const overlay = document.querySelector(".overlay");

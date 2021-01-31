@@ -33,6 +33,25 @@ a
 	&_opened
 		display: block
 		z-index: 90
+.to-top
+	position: fixed
+	z-index: 200
+	right: 30px
+	bottom: 30px
+	display: inline-block
+	mix-blend-mode: difference
+	width: 50px
+	height: 50px
+	opacity: 1
+	visibility: visible
+	transition: all ease-out 0.3s
+	&_hidden
+		opacity: 0
+		visibility: hidden
+		transition: all ease-out 0.3s
+	svg
+		fill: $main-blue
+		transition: all ease-out 0.3s
 
 // Styles for svg-icons
 .icon
@@ -92,3 +111,6 @@ a
 	.footer-social__item:hover	.icon__footer
 		fill: $main-blue-hover
 		transition: ease-out 0.3s
+	.to-top:hover svg
+		fill: $main-blue-hover
+		transition: all ease-out 0.3s

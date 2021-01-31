@@ -63,4 +63,10 @@
       </clipPath>
     </defs>
   </symbol>
+  <!-- Button to top -->
+  <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-top">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 37.5a17.5 17.5 0 100-35 17.5 17.5 0 000 35zm0 2.5a20 20 0 100-40 20 20 0 000 40z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.615 20.885a1.25 1.25 0 001.77 0L20 14.267l6.615 6.618a1.252 1.252 0 001.77-1.77l-7.5-7.5a1.25 1.25 0 00-1.77 0l-7.5 7.5a1.25 1.25 0 000 1.77z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 28.75a1.25 1.25 0 001.25-1.25V15a1.25 1.25 0 00-2.5 0v12.5A1.25 1.25 0 0020 28.75z"></path>
+  </symbol>
 </svg>
