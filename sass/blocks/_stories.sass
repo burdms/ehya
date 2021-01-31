@@ -104,16 +104,18 @@
   cursor: default
   svg
     fill: #959EAD
+
 // Ховер-эффекты
 @media (min-width: 993px)
   .stories
-    &-slider__button:hover
+    &-info__button:hover
       border-color: $main-blue-hover
       transition: ease-out 0.3s
     &-item
       &__link:hover
         color: $main-blue-hover
-
+.swiper-button-disabled:hover
+  border-color: #959EAD
 // Адаптив
 @media (max-width: 1200px)
   .stories
