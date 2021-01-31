@@ -62,8 +62,28 @@ $(document).ready(function () {
     $(this).addClass("trends-tabs__item_active");
   });
 
+  // reviews slider
+  const reviewsSlider = new Swiper(".reviews-slider", {
+    loop: true,
+    effect: "slide",
+    spaceBetween: 100,
+    autoHeight: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 7000,
+    },
+  });
+  const reviewsContainer = document.querySelector(".reviews-slider");
+  reviewsContainer.addEventListener("mouseover", () => reviewsSlider.autoplay.stop());
+  reviewsContainer.addEventListener("mouseout", () => reviewsSlider.autoplay.start());
+
   // Stories slider
-  var storiesSlider = new Swiper(".stories-slider", {
+  const storiesSlider = new Swiper(".stories-slider", {
     loop: true,
     effect: "slide",
     autoHeight: true,
