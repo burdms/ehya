@@ -15,7 +15,6 @@
     height: 100%
     overflow: hidden
     &__item
-      padding-bottom: 48px
       font-feature-settings: "locl" 0
       font-family: "HK Grotesk", sans-serif
       font-style: normal
@@ -29,6 +28,8 @@
       line-height: 42px
       letter-spacing: 0.133333px
     &__author
+      display: inline-block
+      margin-bottom: 48px
       font-weight: bold
       font-size: 20px
       line-height: 24px
@@ -43,3 +44,30 @@
       outline: none
       &-active
         background-color: $title-color
+
+@media (max-width: 992px)
+  .reviews
+    &-container
+      max-width: 700px
+@media (max-width: 768px)
+  .reviews
+    &-container
+      max-width: 630px
+      width: 87.5%
+@media (max-width: 576px)
+  .reviews
+    margin-bottom: 64px
+    &__icon
+      margin-bottom: 13px
+      width: 70px
+      height: 81px
+    &-slider
+      &__text
+        margin: 0 0 24px
+        font-size: 18px
+        line-height: 36px
+      &__author
+        margin-bottom: 24px
+        max-width: 145px
+        font-size: 20px
+        line-height: 24px
