@@ -63,42 +63,47 @@ $(document).ready(function () {
   });
 
   // reviews slider
-  const reviewsSlider = new Swiper(".reviews-slider", {
-    loop: true,
-    effect: "slide",
-    spaceBetween: 100,
-    autoHeight: true,
+  if (document.querySelector(".reviews-slider")) {
+    const reviewsSlider = new Swiper(".reviews-slider", {
+      loop: true,
+      effect: "slide",
+      spaceBetween: 100,
+      autoHeight: true,
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
 
-    autoplay: {
-      delay: 7000,
-    },
-  });
-  const reviewsContainer = document.querySelector(".reviews-slider");
-  reviewsContainer.addEventListener("mouseover", () => reviewsSlider.autoplay.stop());
-  reviewsContainer.addEventListener("mouseout", () => reviewsSlider.autoplay.start());
+      autoplay: {
+        delay: 7000,
+      },
+    });
+    const reviewsContainer = document.querySelector(".reviews-slider");
+    reviewsContainer.addEventListener("mouseover", () => reviewsSlider.autoplay.stop());
+    reviewsContainer.addEventListener("mouseout", () => reviewsSlider.autoplay.start());
+  }
 
   // Stories slider
-  const storiesSlider = new Swiper(".stories-slider", {
-    loop: true,
-    effect: "slide",
-    autoHeight: true,
+  if (document.querySelector(".stories-slider")) {
+    const storiesSlider = new Swiper(".stories-slider", {
+      loop: true,
+      effect: "slide",
+      autoHeight: true,
 
-    navigation: {
-      nextEl: ".stories-slider__button_next",
-      prevEl: ".stories-slider__button_prev",
-    },
+      navigation: {
+        nextEl: ".stories-info__button_next",
+        prevEl: ".stories-info__button_prev",
+      },
 
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
-  });
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+    });
+  }
 
+  // Form validation
   $(".login__form").validate({
     errorClass: "subscribe__error",
     messages: {
