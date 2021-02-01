@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Ehya - интернет-магазин брендовой одежды</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="/projects/ehya" class="header-logo">
+          <img src="img/header-logo.svg" alt="Логотип" class="header-logo__image" />
+        </a>
+        <!-- /.header-logo -->
+
+        <div class="header-menu">
+          <nav class="header-nav">
+            <a href="/projects/ehya" class="header-nav__link">Главная</a>
+            <a href="/projects/ehya/index.html#new" class="header-nav__link">Новинки</a>
+            <a href="/projects/ehya/index.html#trends" class="header-nav__link">Тренды</a>
+            <a href="/projects/ehya/index.html#reviews" class="header-nav__link">Отзывы</a>
+            <a href="#contacts" class="header-nav__link">Контакты</a>
+          </nav>
+          <!-- /.header-nav -->
+
+          <button class="header-login">Войти</button>
+          <!-- /.header-login -->
+        </div>
+        <!-- /.header-menu -->
+
+        <button class="header-burger"></button>
+        <!-- /.header-burger (mobile) -->
+      </div>
+      <!-- /.header-container -->
+    </header>
+    <!-- /.header -->
+
+    <div class="login">
+      <div class="login__overlay"></div>
+      <!-- /.login__overlay -->
+
+      <div class="login__dialog">
+        <button class="login__close">
+          <svg class="icon icon__close">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <span class="title login__title">Войти в&nbsp;личный&nbsp;кабинет</span>
+
+        <form action="send.php" method="POST" class="login__form">
+          <input type="hidden" name="formName" value="login" />
+          <input
+            type="text"
+            class="input login__input"
+            placeholder="Ваш логин"
+            name="login"
+            required
+          />
+          <div class="login__password">
+            <input
+              type="password"
+              id="password-input"
+              class="input login__input login__input_password"
+              placeholder="Ваш пароль"
+              name="password"
+              minlength="6"
+              required
+            />
+            <a class="login__password-control"></a>
+          </div>
+          <!-- /.login__password -->
+
+          <button type="submit" class="login__button">Войти</button>
+        </form>
+      </div>
+      <!-- /.login__dialog -->
+    </div>
+    <!-- /.login -->
+
+    <section class="hero">
+      <div class="hero-wrapper">
+        <h1 class="title hero__title">Спасибо за заявку!</h1>
+        <p class="hero__text">Ваши данные были успешно отправлены</p>
+        <a href="/projects/ehya" class="hero__button">На главную</a>
+      </div>
+      <!-- /.hero-wrapper -->
+    </section>
+    <!-- /#hero.hero -->
+
+    <section class="subscribe" id="contacts">
+      <div class="subscribe-container">
+        <div class="subscribe-info">
+          <h2 class="title subscribe-info__title">Подпишитесь</h2>
+          <p class="subscribe-info__text">
+            Напишите свой адрес электронной почты. Мы&nbsp;будем&nbsp;присылать вам новости из мира
+            моды.
+          </p>
+        </div>
+        <!-- /.subscribe-info -->
+
+        <form action="send.php" method="POST" class="subscribe-form">
+          <div class="subscribe-form__input-group">
+            <input
+              type="email"
+              class="subscribe-form__input"
+              name="email"
+              placeholder="Ваш Email"
+              required
+            />
+          </div>
+          <!-- /.subscribe-form__input-group -->
+          <input type="hidden" name="formName" value="subscribe" />
+          <button class="subscribe-form__button">Подписаться</button>
+        </form>
+        <!-- /.subscribe-form -->
+      </div>
+      <!-- /.subscribe-container -->
+    </section>
+    <!-- /.subscribe -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-info">
+            <a href="#" class="footer-logo">
+              <img src="img/footer-logo.svg" alt="Логотип" class="footer-logo__image" />
+            </a>
+            <!-- /.footer-logo -->
+            <p class="footer-info__text">Интернет-магазин брендовой одежды с оплатой онлайн</p>
+            <div class="footer-social">
+              <a href="https://www.google.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-google"></use>
+                </svg>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-instagram"></use>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" class="footer-social__item">
+                <svg class="icon icon__footer">
+                  <use xlink:href="img/sprite.svg#footer-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.footer-social -->
+          </div>
+          <!-- /.footer-info -->
+
+          <div class="footer-nav">
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Навигация</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Новая коллекция</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Трендовая одежда</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Истории Fashun</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Отзывы клиентов</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Вся одежда</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Сервисы</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Рассрочка на 6 мес </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Кредит на 12 мес</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Доставка по РФ</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Возврат покупок</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Акции и кэшбек</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Компания</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Об Ehya</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Правила сайта</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Обработка данных</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Вакансии</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__title">Контакты</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Группа Фейсбук</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Канал Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-nav__group -->
+          </div>
+          <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+      <!-- /.footer-container -->
+    </footer>
+    <!-- /.footer -->
+
+    <div class="overlay"></div>
+    <!-- /.overlay -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
